@@ -1,0 +1,203 @@
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+header{
+    background-color: #3EBFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+}
+
+header > a > img{
+    width: 140px;
+} 
+
+header > nav > ul{
+    color: white;
+    display: flex;
+    justify-items: center;
+    gap: 5px;
+}
+
+header > nav > ul > li{
+    font-size: 14px;
+    padding: 15px 25px;
+}
+
+header > nav > ul > li:hover{
+    background-color: #fff;
+    border-radius: 30px;
+    color: #000;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+main{
+    background-color: goldenrod;
+}
+
+.hero{
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.hero > h1{
+    font-size: 42px;
+    color: #fff;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 10px;
+}
+
+.services{
+    background-color: greenyellow;
+    display: grid;
+    grid-template: repeat(3, 600px) / repeat(2, 1fr);
+}
+
+.services-1{
+    grid-column: 1 / span 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 120px 0 0;
+    background-color: #fff;
+}
+
+.services-2{
+    background: url(./images/desktop/image-transform.jpg) no-repeat center / cover;
+    grid-column: 2 / span 1;
+}
+
+.services-3{
+    background: url(./images/desktop/image-stand-out.jpg) no-repeat center / cover;
+    grid-column: 1 / span 1;
+}
+
+.services-4{
+    background-color: #fff;
+    grid-column: 1 / span 1;
+    display: flex;
+    padding: 0 0 0 120px;
+    grid-column: 2 / span 1;
+}
+
+.services-5, .services-6{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0 0 50px 0;
+}
+
+.services-5{
+    grid-column: 1 / span 1;
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat top / cover;
+}
+
+.services-6{
+    grid-column: 2 / span 1;
+    background: url(./images/desktop/image-photography.jpg) no-repeat top / cover;
+}
+
+.service-without-bg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 35px;
+    max-width: 450px;
+}
+
+.service-without-bg> h2{
+    font-size: 40px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
+} 
+
+.service-without-bg > .description{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Dark-grayish-blue);
+    line-height: 30px;
+} 
+
+.service-without-bg > .learn-more-service-1, .service-without-bg > .learn-more-service-2{
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--Very-dark-desaturated-blue);
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+} 
+
+.service-without-bg > .learn-more-service-1::after, .service-without-bg > .learn-more-service-2::after{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -5px;
+    border-radius: 30px;
+    width: 130px;
+    height: 7px;
+    z-index: -1;
+    opacity: 30%;
+}
+
+.learn-more-service-1::after{
+    background-color: var(--Yellow);
+}
+
+.learn-more-service-2::after{
+    background-color: var(--Soft-red);
+}
+
+.learn-more-service-1:hover::after, .learn-more-service-2:hover::after{
+    opacity: 100%;
+}
+
+.design, .photography{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    max-width: 350px;
+}
+
+.design > h2, .photography > h2{
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.design > p, .photography > p{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.design{
+    color: var(--Dark-desaturat-cyan);
+}
+
+.photography{
+    color: var(--Dark-blue);
+}
+
+
+.client-testimonials{
+    background-color: #fff;
+}
