@@ -1,0 +1,89 @@
+#clients{
+    grid-area: clients;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 10% 5%;
+    color: var(--neutral-blue-1);
+}
+
+#clients > h3{
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    color: var(--neutral-blue-4);
+    font-weight: 900;
+    text-align: center;
+}
+
+.clients-container{
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+}
+
+.client > img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.client > p{
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--neutral-blue-2);
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom:70px;
+}
+
+.client > h4{
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.client > span{
+    color: var(--neutral-blue-4);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@media(max-width:1000px){
+
+    #clients{
+        padding: 15% 0;
+    }
+
+    .clients-container{
+        flex-direction: column;
+    }
+
+    #clients > h3{
+        font-size: 1.6rem;
+        font-weight: 900;
+    }
+
+    .client > img{
+        margin-bottom: 30px;
+    }
+
+    .client > p{
+        margin-bottom: 30px;
+    }
+    .clients-container{
+        margin: 0 5%;
+    }
+}

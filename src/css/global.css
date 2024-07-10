@@ -17,24 +17,3 @@ body{
     grid-template-columns: repeat(4, 1fr);
     font-family: 'Barlow', sans-serif;
 }
-
-
-#services{
-    grid-area: services;
-    background-color: orchid;
-}
-
-#projects{
-    grid-area: clients;
-    background-color: orangered;
-}
-
-#projects{
-    grid-area: projects;
-    background-color: blueviolet;
-}
-
-footer{
-    grid-area: footer;
-    background-color: var(--lighter-green);
-}

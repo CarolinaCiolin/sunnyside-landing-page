@@ -1,0 +1,30 @@
+#projects{
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 60vh;
+}
+
+.project-1{
+    background: url('../images/desktop/image-gallery-milkbottles.jpg') center center / cover no-repeat;
+}
+
+.project-2{
+    background: url('../images/desktop/image-gallery-orange.jpg') center center / cover no-repeat;
+}
+
+.project-3{
+    background: url('../images/desktop/image-gallery-cone.jpg') center center / cover no-repeat;
+}
+
+.project-4{
+    background: url('../images/desktop/image-gallery-sugarcubes.jpg') center center / cover no-repeat;
+}
+
+@media(max-width:768px){
+
+    #projects{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
